@@ -1,22 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <body style="background-color: #36393e;"></body>
     <head>
+        <meta charset="UTF-8">
         <title>Jakub Smutny</title>
         <style>
-            img {
-                width: 100px;
-                border-radius: 50px;
-                float: left;
-                margin-right: 10px;
+            .profilepic {
+                height: 150px;
+                border-radius: 75px;
+                float:left;
+                margin-right: 20px;
             }
-            .username {
-                font-weight: bold ;
+            .text {
+                font-weight: bold;
+                color: white;
+            }
+            .counter {
+                color: white;
+            }
+            .sum {
+                font-size: large;
+                font-weight: bold;
+            }
+            button {
+                background-color: lightgrey;
+                font-weight: bold;
+                border-radius: 10px;
             }
         </style>
     </head>
     <body>
-        <img src="img/profilepic.jpeg" alt="">
-        <p class="username">@jakubsmutny</p>
-        <p>This is my website!</p>
+        <img class="profilepic" src="img/profilepic.jpeg" alt="Profile picture image">
+        <p class="text">@jakubsmutny</p>
+        
+        <script type="text/javascript">
+            var clicks = 0;
+
+            function addTen() {
+            clicks += 10;
+            document.getElementById("clicks").innerHTML = clicks;
+            };
+            function addOne() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+            };
+            function subOne() {
+            clicks -= 1;
+            document.getElementById("clicks").innerHTML = clicks;
+            };
+            function subTen() {
+            clicks -= 10;
+            document.getElementById("clicks").innerHTML = clicks;
+            };
+            function setZero() {
+            clicks = 0;
+            document.getElementById("clicks").innerHTML = clicks;
+            };
+        </script>
+
+        <p class="counter">Counter: <a class="sum" id="clicks">0</a></p>
+        <button type="button" onClick="subTen()">-10</button>
+        <button type="button" onClick="subOne()">-1</button>
+        <button type="button" onClick="setZero()">0</button>
+        <button type="button" onClick="addOne()">+1</button>
+        <button type="button" onClick="addTen()">+10</button>
+
     </body>
 </html> 
