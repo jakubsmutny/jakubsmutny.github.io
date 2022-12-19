@@ -4,66 +4,36 @@
     <head>
         <meta charset="UTF-8">
         <title>Jakub Smutny</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <style>
             .profilepic {
                 height: 150px;
-                border-radius: 75px;
+                border-radius: 175px;
                 float:left;
                 margin-right: 20px;
+            }
+            .icon {
+                height: 48px;
+                float:left;
+                margin-right: 16px;
             }
             .text {
                 font-weight: bold;
                 color: white;
+                font-family: Arial, Helvetica, sans-serif;
             }
-            .counter {
-                color: white;
-            }
-            .sum {
-                font-size: large;
+            .link {
                 font-weight: bold;
-            }
-            button {
-                background-color: lightgrey;
-                font-weight: bold;
-                border-radius: 10px;
+                color: grey;
+                font-family: Arial, Helvetica, sans-serif;
             }
         </style>
     </head>
     <body>
-        <img class="profilepic" src="img/profilepic.jpeg" alt="Profile picture image">
-        <p class="text">@jakubsmutny</p>
-        
-        <script type="text/javascript">
-            var clicks = 0;
-
-            function addTen() {
-            clicks += 10;
-            document.getElementById("clicks").innerHTML = clicks;
-            };
-            function addOne() {
-            clicks += 1;
-            document.getElementById("clicks").innerHTML = clicks;
-            };
-            function subOne() {
-            clicks -= 1;
-            document.getElementById("clicks").innerHTML = clicks;
-            };
-            function subTen() {
-            clicks -= 10;
-            document.getElementById("clicks").innerHTML = clicks;
-            };
-            function setZero() {
-            clicks = 0;
-            document.getElementById("clicks").innerHTML = clicks;
-            };
-        </script>
-
-        <p class="counter">Counter: <a class="sum" id="clicks">0</a></p>
-        <button type="button" onClick="subTen()">-10</button>
-        <button type="button" onClick="subOne()">-1</button>
-        <button type="button" onClick="setZero()">0</button>
-        <button type="button" onClick="addOne()">+1</button>
-        <button type="button" onClick="addTen()">+10</button>
-
+        <img class="profilepic" src="img/profilepic.png" alt="Profile picture image">
+        <h1 class="text">Jakub Smutný</h1>
+        <p class="text">Student at <a class="link" href="https://fit.cvut.cz">FIT ČVUT</a></p>
+        <a class= "link" href="https://github.com/jakubsmutny"><img class="icon" src="img/github.png" alt="GitHub icon image"></a>
+        <a class= "link" href="http://discordapp.com/users/379676005444485120"><img class="icon" src="img/discord.png" alt="Discord icon image"></a>
     </body>
 </html> 
