@@ -1,6 +1,6 @@
 .profilepic {
-    height: 200px;
-    border-radius: 100px;
+    height: 160px;
+    border-radius: 80px;
     float: left;
     margin-right: 20px;
     margin-left: 20px;
@@ -11,7 +11,7 @@ h1 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 40px;
-    margin-left: 20px;
+    margin-left: 210px;
 }
 .text {
     font-weight: bold;
@@ -20,6 +20,8 @@ h1 {
     display: flex;
     align-items: center;
     font-size: small;
+    margin-left: 235px;
+    margin-bottom: 32px;
 }
 .copyicon {
     height: 16px;
