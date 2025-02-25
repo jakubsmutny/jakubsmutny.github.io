@@ -1,17 +1,62 @@
+body {
+    /*height: 100vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #202020;
+    gap: 30px;
+}
 
-.mail {
+.container {
+    padding: 2rem 5rem;
+    border-radius: 20px;
+    background: #303030;
+    box-shadow: 0 7px 30px #000000;
+    gap: 1rem;
+    width: 400px;
+    color: white;
+}
+.container:first-child {
+    margin-top: 100px;
+}
+
+.name {
+    text-align: center;
     font-weight: bold;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    font-size: small;
-    margin-left: 225px;
-    margin-bottom: 32px;
+    font-size: 2rem;
+    margin: 5px;
+}
+
+.mail {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 10px;
 }
 .copyicon {
     height: 16px;
     margin-left: 6px;
+    opacity: 0.5;
+}
+.copyicon:hover {
+    opacity: 1 !important;
+    cursor: pointer;
+}
+
+.credentials {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    gap: 1rem;
+}
+.picture {
+    height: 162px;
+    border-radius: 81px;
 }
 .link {
     font-weight: bold;
@@ -25,12 +70,6 @@
     opacity: 0.5;
     gap: 10px;
 }
-.icon {
-    border-radius: 10px;
-    height: 40px;
-    margin: 5px;
-}
-
 .link:hover {
     opacity: 1;
 }
@@ -38,50 +77,8 @@
     height: 50px;
     margin: 0px;
 }
-
-
-
-body {
-    /* height: 100vh; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #202020;
-    gap: 30px;
-}
-
-.container {
-    padding: 2rem 5rem;
-    border-radius: 20px;
-    background: #303030;
-    box-shadow: 0 7px 20px #000000;
-    gap: 1rem;
-    max-width: 400px;
-    color: white;
-}
-.name {
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+.icon {
+    border-radius: 10px;
+    height: 40px;
     margin: 5px;
-}
-.email {
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    margin: 10px;
-}
-.credentials {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.picture {
-    height: 162px;
-    border-radius: 81px;
 }
