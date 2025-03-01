@@ -1,3 +1,7 @@
 RewriteEngine On
+
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.jakubsmutny.cz/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^rubikovakostka.jakubsmutny.cz$ [NC]
+RewriteRule ^((?!rubikovakostka).*)$ /rubikovakostka/$1 [NC,L]
