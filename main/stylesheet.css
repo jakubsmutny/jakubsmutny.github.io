@@ -82,3 +82,31 @@ body {
     height: 40px;
     margin: 5px;
 }
+
+.button {
+    padding: 2rem 5rem;
+    border-radius: 20px;
+    background: #303030;
+    box-shadow: 0 7px 30px #000000;
+    gap: 1rem;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.buttoncontent {
+    max-height: 70px;
+    opacity: 0.5;
+}
+.button:hover {
+    background: #353535;
+}
+.button:hover > .buttoncontent {
+    opacity: 1;
+}
