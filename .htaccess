@@ -12,6 +12,6 @@ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 RewriteCond %{HTTP_HOST} ^jakubsmutny.cz$ [NC]
 RewriteRule ^((?!main).*)$ /main/$1 [NC]
 
-# Redirect to rubikovakostka.jakubsmutny.cz
-RewriteCond %{HTTP_HOST} ^rubikovakostka.jakubsmutny.cz$ [NC]
-RewriteRule ^((?!rubikovakostka).*)$ /rubikovakostka/$1 [NC]
+# Redirect to rubik.jakubsmutny.cz
+RewriteCond %{HTTP_HOST} ^rubik.jakubsmutny.cz$ [NC]
+RewriteRule ^((?!rubik).*)$ /rubik/$1 [NC]
