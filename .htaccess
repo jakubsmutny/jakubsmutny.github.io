@@ -7,11 +7,3 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 # Remove unnecessary www
 RewriteCond %{HTTP_HOST} !^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
-
-# Redirect to jakubsmutny.cz
-RewriteCond %{HTTP_HOST} ^www.jakubsmutny.cz$ [NC]
-RewriteRule ^((?!main).*)$ /main/$1 [NC]
-
-# Redirect to rubik.jakubsmutny.cz
-RewriteCond %{HTTP_HOST} ^www.rubik.jakubsmutny.cz$ [NC]
-RewriteRule ^((?!rubik).*)$ /rubik/$1 [NC]
